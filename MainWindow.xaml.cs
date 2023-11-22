@@ -20,9 +20,15 @@ namespace GAStephanieLopezeClasses
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Item> inventory;
+        // A list for the Items!
+
+        ShoppingCart Cart;
+        // Shopping Cart Object.
         public MainWindow()
         {
             InitializeComponent();
+            PreLoadInventory();
         }
 
         private void btnAddToCart_Click(object sender, RoutedEventArgs e)
