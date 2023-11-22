@@ -98,7 +98,5 @@ namespace GAStephanieLopezeClasses
             {
                 return $"Name: {_name} - Price: {_price.ToString("c")} - Discount:  {_discount.ToString("c")} - Total Price: {_price.ToString("c")}";
             }
-
-
         }
     }
