@@ -13,19 +13,19 @@
         <Canvas.Background>
             <RadialGradientBrush>
                 <GradientStop
-                    Color="#FF7F4888"
-                    Offset="0.096" />
+                    Color="#FF782B84"
+                    Offset="0.144" />
                 <GradientStop
                     Color="#FFF1B3FB"
-                    Offset="0.845" />
+                    Offset="0.635" />
             </RadialGradientBrush>
         </Canvas.Background>
         <ListBox
             x:Name="lbInventory"
             Height="390"
-            Width="411"
+            Width="474"
             d:ItemsSource="{d:SampleData ItemCount=5}"
-            Canvas.Left="25"
+            Canvas.Left="10"
             Canvas.Top="39"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
@@ -35,10 +35,10 @@
         <RichTextBox
             Height="142"
             Width="222"
-            Canvas.Left="448"
+            Canvas.Left="505"
             Canvas.Top="270"
             HorizontalAlignment="Left"
-            VerticalAlignment="Top"
+            VerticalAlignment="Center"
             Background="#FFFAE1FB">
             <FlowDocument>
                 <Paragraph>
@@ -49,18 +49,18 @@
         </RichTextBox>
         <Label
             Content="Inventory"
-            Canvas.Left="25"
+            Canvas.Left="10"
             Canvas.Top="8"
-            FontFamily="SimSun"
-            FontSize="14" />
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center" />
         <Button
             x:Name="btnAddToCart"
             Content="Add To Cart"
-            Canvas.Left="514"
+            Canvas.Left="571"
             Canvas.Top="444"
             Height="30"
             Width="90"
-            HorizontalAlignment="Center"
+            HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Click="btnAddToCart_Click"
             Background="#FFE686D5"
@@ -69,9 +69,9 @@
         <ListBox
             x:Name="lbShopping"
             Height="372"
-            Width="383"
+            Width="421"
             d:ItemsSource="{d:SampleData ItemCount=5}"
-            Canvas.Left="695"
+            Canvas.Left="745"
             Canvas.Top="48"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
@@ -80,12 +80,12 @@
         <RichTextBox
             Height="373"
             Width="350"
-            Canvas.Left="1103"
+            Canvas.Left="1188"
             Canvas.Top="47"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Background="#FFFBF0FB"
-            FontFamily="">
+            FontFamily="SimSun">
             <FlowDocument>
                 <Paragraph>
                     <Run
@@ -95,7 +95,7 @@
         </RichTextBox>
         <Label
             Content="Shopping Cart"
-            Canvas.Left="695"
+            Canvas.Left="745"
             Canvas.Top="16"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
@@ -103,16 +103,17 @@
             FontSize="14" />
         <Label
             Content="Receipt"
-            Canvas.Left="1103"
+            Canvas.Left="1188"
             Canvas.Top="16"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
             FontFamily="SimSun"
-            FontSize="14" />
+            FontSize="14"
+            RenderTransformOrigin="0.606,0.506" />
         <Button
             x:Name="btnTotalTransaction"
             Content="Total Transaction"
-            Canvas.Left="728"
+            Canvas.Left="808"
             Canvas.Top="444"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
@@ -122,6 +123,5 @@
             Background="#FFF191E1"
             FontFamily="SimSun"
             FontSize="14" />
-
     </Canvas>
 </Window>
